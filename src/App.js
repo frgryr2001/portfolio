@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+import Projects from "./components/Project/Projects";
+import Skill from "./components/Skill/Skill";
 
 function App() {
+  const [theme, setTheme] = useState("");
+  const toggleTheme = () => {
+    if (theme === "") {
+      setTheme("dark");
+    } else {
+      setTheme("");
+    }
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className={`${theme}`}>
+      <div className=" dark:bg-black dark:w-full">
+        <div
+          className={`max-w-7xl m-auto bg-white dark:bg-black text-neutral-600 dark:text-white font-normal  `}
         >
-          Learn React
-        </a>
-      </header>
+          <Header toggleTheme={toggleTheme} theme={theme} />
+          <Hero />
+          <Skill />
+          <Projects />
+          <About />
+          <Contact />
+        </div>
+      </div>
     </div>
   );
 }
