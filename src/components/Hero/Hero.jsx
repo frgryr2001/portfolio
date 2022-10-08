@@ -18,7 +18,7 @@ const Hero = () => {
           Hi, I'm Hoang Nhan
         </h1>
         <p className="text-[16px] md:text-[24px]">
-          I'm a
+          I'm a{" "}
           <a
             href="/"
             className="underline decoration-sky-500 dark:decoration-pink-500"
