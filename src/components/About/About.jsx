@@ -10,7 +10,7 @@ const About = () => {
       id="about"
       className={`py-8 px-8 mb-10 border-t-2 border-gray-400 ${
         inView ? "opacity-1 translate-y-0" : "opacity-0 translate-y-10"
-      } transition-all duration-700 ease-in text-[12px] sm:text-[14px] md:text-[16px]`}
+      } transition-opacity duration-700 ease-in text-[12px] sm:text-[14px] md:text-[16px]`}
       ref={ref}
     >
       <h1 className="text-[30px] sm:text-[36px] md:text-[44px] font-bold text-center">
@@ -28,7 +28,7 @@ const About = () => {
         <ul
           className={`${
             inView ? "opacity-1" : "opacity-0"
-          } transition-all duration-700 ease-in text-center lg:text-left`}
+          } transition-opacity duration-700 ease-in text-center lg:text-left`}
         >
           <li className="mb-6 ">
             I'm a fourth-year student at Ton Duc Thang University. My major is

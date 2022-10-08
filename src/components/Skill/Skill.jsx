@@ -23,7 +23,7 @@ const Skill = () => {
       id="skill"
       className={`py-40 border-t-2 border-gray-400 ${
         inView ? "opacity-1" : "opacity-0"
-      } transition-all duration-1000 ease-in text-[12px] sm:text-[14px] md:text-[16px]`}
+      } transition-opacity duration-1000 ease-in text-[12px] sm:text-[14px] md:text-[16px]`}
       ref={ref}
     >
       <h1 className="text-[30px] sm:text-[36px] md:text-[44px] font-bold text-center">
