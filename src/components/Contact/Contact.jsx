@@ -15,6 +15,7 @@ const Contact = () => {
       className={`pt-4 pb-2 px-8 border-t-2 border-gray-400 ${
         inView ? "opacity-1 translate-y-0" : "opacity-0 translate-y-10"
       } transition-opacity duration-700 ease-in text-[12px] sm:text-[14px] md:text-[16px]`}
+      data-scroll-section
     >
       <h1 className="text-[30px] sm:text-[36px] md:text-[44px] font-bold text-center">
         Contact Me
@@ -47,7 +48,7 @@ const Contact = () => {
           </a>
         </div>
         {/* design  */}
-        <p className="text-center mt-6"> Designed by &#169; Hoang Nhan</p>
+        <p className="mt-6 text-center"> Designed by &#169; Hoang Nhan</p>
       </div>
     </section>
   );

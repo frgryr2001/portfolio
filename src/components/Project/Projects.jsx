@@ -1,26 +1,27 @@
-import { useInView } from "react-intersection-observer";
+import { useInView } from 'react-intersection-observer';
 
 const Projects = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    rootMargin: "-100px 0px",
+    rootMargin: '-100px 0px',
   });
   return (
     <section
       id="projects"
       className={`py-8 mb-10 border-t-2 border-gray-400 ${
-        inView ? "opacity-1 translate-y-0" : "opacity-0 translate-y-10"
+        inView ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-10'
       } transition-opacity duration-700 ease-in text-[12px] sm:text-[14px] md:text-[16px]`}
       ref={ref}
+      data-scroll-section
     >
       <h1 className="text-[30px] sm:text-[36px] md:text-[44px] font-bold text-center mb-6">
         My Projects
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-3 place-items-center sm:place-items-stretch ">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 md:gap-3 place-items-center sm:place-items-stretch ">
         <div className="m-4 w-[70%] sm:w-[90%]   shadow-lg dark:shadow-white dark:shadow-sm  rounded-lg overflow-hidden hover:scale-105 transition-all">
           <a
             href="https://omnifood-hnhan2k1.netlify.app/"
-            target={"_blank"}
+            target={'_blank'}
             rel="noreferrer"
           >
             <div className="flex flex-col items-start justify-center ">
@@ -30,19 +31,19 @@ const Projects = () => {
                 border="0"
                 className="w-[100%] cover h-full"
               />
-              <div className=" py-8 px-4">
+              <div className="px-4 py-8 ">
                 <h1 className="text-[20px] font-bold mb-4">Omnifood</h1>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-blue-300 rounded-md p-1 font-bold">
+                  <span className="p-1 font-bold bg-blue-300 rounded-md">
                     #Html5
                   </span>
-                  <span className="bg-blue-300 rounded-md p-1 font-bold">
+                  <span className="p-1 font-bold bg-blue-300 rounded-md">
                     #Css3
                   </span>
-                  <span className="bg-blue-300 rounded-md p-1 font-bold">
+                  <span className="p-1 font-bold bg-blue-300 rounded-md">
                     #JavaScript
                   </span>
-                  <span className="bg-blue-300 rounded-md p-1 font-bold">
+                  <span className="p-1 font-bold bg-blue-300 rounded-md">
                     #Sass
                   </span>
                 </div>
@@ -64,7 +65,7 @@ const Projects = () => {
         <div className="m-4 w-[70%] sm:w-[90%]  shadow-lg dark:shadow-white dark:shadow-sm  rounded-lg overflow-hidden hover:scale-105 transition-all">
           <a
             href="https://hn2001-tours.netlify.app/"
-            target={"_blank"}
+            target={'_blank'}
             rel="noreferrer"
           >
             <div className="flex flex-col items-start justify-center">
@@ -72,19 +73,19 @@ const Projects = () => {
                 src="/project/bookTours.png"
                 alt="tours"
                 border="0"
-                className="w-full cover h-full"
+                className="w-full h-full cover"
               />
-              <div className=" py-8 px-4 ">
+              <div className="px-4 py-8 ">
                 <h1 className="text-[20px] font-bold mb-4">Booking Tours</h1>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-blue-300 rounded-md p-1 font-bold">
+                  <span className="p-1 font-bold bg-blue-300 rounded-md">
                     #Html5
                   </span>
-                  <span className="bg-blue-300 rounded-md p-1 font-bold">
+                  <span className="p-1 font-bold bg-blue-300 rounded-md">
                     #Css3
                   </span>
 
-                  <span className="bg-blue-300 rounded-md p-1 font-bold">
+                  <span className="p-1 font-bold bg-blue-300 rounded-md">
                     #Sass
                   </span>
                 </div>
@@ -107,7 +108,7 @@ const Projects = () => {
         <div className="m-4  w-[70%] sm:w-[90%] shadow-lg  dark:shadow-white dark:shadow-sm rounded-lg overflow-hidden hover:scale-105 transition-all">
           <a
             href="https://github.com/frgryr2001/Natours"
-            target={"_blank"}
+            target={'_blank'}
             rel="noreferrer"
           >
             <div className="flex flex-col items-start justify-center">
@@ -115,18 +116,18 @@ const Projects = () => {
                 src="/project/natours.png"
                 alt="clothes"
                 border="0"
-                className="w-full cover h-full "
+                className="w-full h-full cover "
               />
-              <div className=" py-8 px-4 ">
+              <div className="px-4 py-8 ">
                 <h1 className="text-[20px] font-bold mb-4">Natours</h1>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-blue-300 rounded-md p-1 font-bold">
+                  <span className="p-1 font-bold bg-blue-300 rounded-md">
                     #NodeJs
                   </span>
-                  <span className="bg-blue-300 rounded-md p-1 font-bold">
+                  <span className="p-1 font-bold bg-blue-300 rounded-md">
                     #ExpressJs
                   </span>
-                  <span className="bg-blue-300 rounded-md p-1 font-bold">
+                  <span className="p-1 font-bold bg-blue-300 rounded-md">
                     #MongoDB
                   </span>
                 </div>
@@ -146,7 +147,7 @@ const Projects = () => {
         <div className="m-4 w-[70%] sm:w-[90%]  shadow-lg dark:shadow-white dark:shadow-sm rounded-lg overflow-hidden hover:scale-105 transition-all">
           <a
             href="https://crwn-app-hn2k1.netlify.app/"
-            target={"_blank"}
+            target={'_blank'}
             rel="noreferrer"
           >
             <div className="flex flex-col items-start justify-center">
@@ -154,21 +155,21 @@ const Projects = () => {
                 src="/project/clothes.png"
                 alt="clothes"
                 // border="0"
-                className="w-full cover h-full "
+                className="w-full h-full cover "
               />
-              <div className=" py-8 px-4 ">
+              <div className="px-4 py-8 ">
                 <h1 className="text-[20px] font-bold mb-4">Clothing app</h1>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-blue-300 rounded-md p-1 font-bold">
+                  <span className="p-1 font-bold bg-blue-300 rounded-md">
                     #Firebase
                   </span>
-                  <span className="bg-blue-300 rounded-md p-1 font-bold">
+                  <span className="p-1 font-bold bg-blue-300 rounded-md">
                     #Sass
                   </span>
-                  <span className="bg-blue-300 rounded-md p-1 font-bold">
+                  <span className="p-1 font-bold bg-blue-300 rounded-md">
                     #ReactJS
                   </span>
-                  <span className="bg-blue-300 rounded-md p-1 font-bold">
+                  <span className="p-1 font-bold bg-blue-300 rounded-md">
                     #Redux
                   </span>
                 </div>
@@ -190,7 +191,7 @@ const Projects = () => {
         <div className="m-4 w-[70%] sm:w-[90%]  shadow-lg dark:shadow-white dark:shadow-sm  rounded-lg overflow-hidden hover:scale-105 transition-all">
           <a
             href="https://github.com/frgryr2001/web-advanced-final"
-            target={"_blank"}
+            target={'_blank'}
             rel="noreferrer"
           >
             <div className="flex flex-col items-start justify-center">
@@ -198,21 +199,21 @@ const Projects = () => {
                 src="/project/web-advanced.png"
                 alt="clothes"
                 // border="0"
-                className="w-full cover h-full "
+                className="w-full h-full cover "
               />
-              <div className=" py-8 px-4 ">
+              <div className="px-4 py-8 ">
                 <h1 className="text-[20px] font-bold mb-4">
                   Transaction applications
                 </h1>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-blue-300 rounded-md p-1 font-bold">
+                  <span className="p-1 font-bold bg-blue-300 rounded-md">
                     #JavaScript
                   </span>
 
-                  <span className="bg-blue-300 rounded-md p-1 font-bold">
+                  <span className="p-1 font-bold bg-blue-300 rounded-md">
                     #NodeJS
                   </span>
-                  <span className="bg-blue-300 rounded-md p-1 font-bold">
+                  <span className="p-1 font-bold bg-blue-300 rounded-md">
                     #MongoDB
                   </span>
                 </div>
